@@ -1,0 +1,12 @@
+{
+    "extends": "./node_modules/eslint-config-google/index.js",
+    "rules": {
+        "max-len": [2, 100, 2],
+        "camelcase": 1,
+        "eol-last": 1
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    }
+}
