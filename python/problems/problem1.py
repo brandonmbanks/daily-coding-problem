@@ -8,12 +8,31 @@
 # Bonus: Can you do this in one pass?
 
 
-def two_num_sum(numbers, k):
-    solve_nums = {}
-    if len(numbers) < 2:
-        return False
+# O(N^2)
+def with_brute_force(numbers, k):
+    length = len(numbers)
+    for i in range(length - 1):
+        for j in range(i + 1, length):
+            if numbers[i] + numbers[j] == k:
+                return True
+    return False
+
+
+# O(N)
+def with_an_object(numbers, k):
+    solutions = {}
     for num in numbers:
-        if num in solve_nums:
+        if num in solutions:
             return True
-        solve_nums[k - num] = True
+        solutions[k - num] = True
+    return False
+
+
+# O(N)
+def with_a_set(numbers, k):
+    solutions = set()
+    for num in numbers:
+        if num in solutions:
+            return True
+        solutions.add(k - num)
     return False
