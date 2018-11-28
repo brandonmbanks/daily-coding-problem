@@ -1,0 +1,43 @@
+{
+  "name": "daily-coding-problem",
+  "version": "1.0.0",
+  "description": "js solutions to daily coding problems",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonmbanks/daily-coding-problem.git"
+  },
+  "keywords": [
+    "daily",
+    "coding",
+    "problem"
+  ],
+  "author": "brandonmbanks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brandonmbanks/daily-coding-problem/issues"
+  },
+  "homepage": "https://github.com/brandonmbanks/daily-coding-problem#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.9.0",
+    "eslint-config-google": "^0.11.0",
+    "jest": "^23.6.0",
+    "regenerator-runtime": "^0.13.1"
+  },
+  "dependencies": {}
+}
