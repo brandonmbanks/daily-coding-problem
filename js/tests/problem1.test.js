@@ -1,4 +1,4 @@
-import {withBruteForce, withAnObject, withASet} from '../problems/problem1';
+import {withBruteForce, withAnObject, withASet} from '../problems/01/solution';
 
 test('test it should return true if 2 numbers add up to k', () => {
   expect(withBruteForce([10, 3, 7], 17)).toBe(true);
