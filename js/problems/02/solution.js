@@ -6,7 +6,7 @@ const fn = (numbers) => {
   return numbers.map((num) => product / num);
 };
 
-// O(n^2)
+// O(N^2)
 const withoutDivision = (numbers) => {
   let result = [];
   for (let i = 0; i < numbers.length; i++) {
@@ -21,7 +21,7 @@ const withoutDivision = (numbers) => {
   return result;
 };
 
-// O(n^2)
+// O(N^2)
 const withoutDivisionFn = (numbers) => {
   return numbers.map((num, i, nums) => {
     return nums.reduce((acc, n, j) => {
